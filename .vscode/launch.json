@@ -5,12 +5,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "pwa-chrome",
+            "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            //"url": "http://localhost:8080",
-            "url": "https://kl17kl.github.io/",
-            "webRoot": "${workspaceFolder}"
+            "url": "http://127.0.0.1:5500/src/",
+            "webRoot": "${workspaceRoot}"
         }
     ]
 }

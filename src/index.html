@@ -1,15 +1,159 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <title>Katie Lee</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Katie Lee's public portfolio.">
-    <!-- <link href="/dist/output.css" rel="stylesheet"> -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello!
-  </h1>
+  <!-- <DEV / UXD> Buttons -->
+  <div class="flex-nowrap mx-auto text-center m-6">
+    <button class="sliced-btn-left pink">DEV</button>
+    <button class="sliced-btn-right orange">UXD</button>
+  </div>
+  
+  <!-- Main: Katie Lee Introduction -->
+  <div class="pink p-20 flex flex-row">
+    <div class="basis-11/12">
+      <h1 class="text-9xl">Katie Lee</h1>
+      <h2 class="text-3xl mt-5">Software Developer</h2>
+    </div>
+    <div class="blue basis-1/12 w-5 h-full p-10">
+      Nav
+    </div>
+  </div>
+
+  <!-- Project 1: Ekkn Point of Sales -->
+  <div class="orange flex w-full h-full mt-10">
+    <div class="flex-initial w-1/2 blue p-5">
+      Image placeholder
+    </div>
+    <div class="flex-initial w-1/2 green p-5">
+      <h2 class="text-4xl">Ekkn Point of Sales</h2>
+      <h3 class="text-xl">Point of Sales System</h3>
+      <p class="mt-3">Business: Mrs. Convenience (Niagara Falls, ON)</p>
+      <p>Roles: Full stack developer and UI & UX designer</p>
+      <p class="my-5">My software description goes here.</p>
+      <div class="flex">
+        <p class="flex-initial">Tools: </p>
+        <button class="tool-pill flex-initial ml-3">Java</button>
+        <button class="tool-pill flex-initial ml-1">HTML</button>
+        <button class="tool-pill flex-initial ml-1">CSS</button> 
+        <button class="tool-pill flex-initial ml-1">JavaScript</button> 
+        <button class="tool-pill flex-initial ml-1">SQL</button>
+      </div>
+      <p class="flex-initial ml-12 mt-1 text-xs"> *This project is a work in progress. More tools may be added in the future.</p>
+    </div>
+  </div>
+
+  <!-- Project 2: Highway Video Analysis Dashboard -->
+  <div class="orange flex w-full h-full mt-10">
+    <div class="flex-initial w-1/2 blue p-5">
+      Image placeholder
+    </div>
+    <div class="flex-initial w-1/2 green p-5">
+      <h2 class="text-4xl">Highway Video Analysis Dashboard</h2>
+      <h3 class="text-xl">Console application</h3>
+      <p class="mt-3">Employer: Digital Garage, MTO (St. Catharines, ON)</p>
+      <p>Role: Junior UX designer</p>
+      <p class="my-5">My software description goes here.</p>
+      <div class="flex">
+        <p class="flex-initial">Tools: </p>
+        <button class="tool-pill flex-initial ml-3">Figma</button>
+        <button class="tool-pill flex-initial ml-1">HTML</button>
+        <button class="tool-pill flex-initial ml-1">CSS</button> 
+        <button class="tool-pill flex-initial ml-1">JavaScript</button> 
+        <button class="tool-pill flex-initial ml-1">Svelte</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 3: Course of Action Dashboard -->
+  <div class="orange flex w-full h-full mt-10">
+    <div class="flex-initial w-1/2 blue p-5">
+      Image placeholder
+    </div>
+    <div class="flex-initial w-1/2 green p-5">
+      <h2 class="text-4xl">Course of Action Dashboard</h2>
+      <h3 class="text-xl">Web application</h3>
+      <p class="mt-3">Institution: Brock University (St. Catharines, ON)</p>
+      <p>Roles: Front-end developer and UNIT tester</p>
+      <p class="my-5">My software description goes here.</p>
+      <div class="flex">
+        <p class="flex-initial">Tools: </p>
+        <button class="tool-pill flex-initial ml-3">JavaScript</button>
+        <button class="tool-pill flex-initial ml-1">Ajax</button>
+        <button class="tool-pill flex-initial ml-1">HTML</button>
+        <button class="tool-pill flex-initial ml-1">CSS</button> 
+        <button class="tool-pill flex-initial ml-1">Bootstrap</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 4: CRM Website -->
+  <div class="orange flex w-full h-full mt-10">
+    <div class="flex-initial w-1/2 blue p-5">
+      Image placeholder
+    </div>
+    <div class="flex-initial w-1/2 green p-5">
+      <h2 class="text-4xl">CRM Website</h2>
+      <h3 class="text-xl">Website</h3>
+      <p class="mt-3">Employer: Royal Bank of Canada (Toronto, ON)</p>
+      <p>Roles: Front-end developer and UI & UX designer</p>
+      <p class="my-5">My software description goes here.</p>
+      <div class="flex">
+        <p class="flex-initial">Tools: </p>
+        <button class="tool-pill flex-initial ml-3">HTML</button>
+        <button class="tool-pill flex-initial ml-1">CSS</button>
+        <button class="tool-pill flex-initial ml-1">JavaScript</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- About me: Education, Skills, Work Experience, Contact -->
+  <div class="pink w-full h-full my-10">
+    <p class="text-center text-xl my-10">About Me</p>
+    <p class="text-center">Brief introduction about me goes here.</p>
+
+    <div class="w-2/3 mx-auto my-10 grid grid-cols-6 gap-5 cyan">
+      <div class="col-span-1 orange">
+        <p>Education</p>
+      </div>
+      <div class="col-span-5 green">
+        <p>Brock University &nbsp Honours BSc Computer Science Co-op, Business Minor</p>
+        <p>St. Catharines, ON / Sept. 2017 - Dec. 2021</p>
+      </div>
+      <div class="col-span-1 orange">
+        <p>Achievements</p>
+      </div>
+      <div class="col-span-5 green">
+        <ul>
+          <li>Brock University Entrance Scholarship (90%+ academic average)</li>
+          <li>Dean’s List (80%+ yearly academic average for 4.5 years)</li>
+          <li>Golden Key International Honour Society (top 15% of faculty)</li>
+          <li>Lean Six Sigma - Yellow Belt Certification</li>
+        </ul>
+      </div>
+      <div class="col-span-1 orange">
+        <p>⌨ Skills</p>
+      </div>
+      <div class="col-span-5 green">
+        <p>Java, HTML, CSS, JavaScript, Python, AJAX, VBA, SQL, ASP.NET, testing, and prototyping.</p>
+      </div>
+      <div class="col-span-1 orange">
+        <p>✒ Skills</p>
+      </div>
+      <div class="col-span-5 green">
+        <p>Figma, Adobe Photoshop, Adobe Illustrator, Wireframing, Prototyping, User interviewing, Data synthesis, Collaboration, Empathy, and Visual design.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer & Contact Info -->
+  <footer class="orange p-10 mx-auto text-center">
+    <p>g.hyunlee12@gmail.com</p>
+    <p>www.linkedin.com/in/katie-lee-08849417b</p>
+  </footer>
+
 </body>
 </html>
