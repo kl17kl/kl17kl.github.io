@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: montserrat;
+  src: ("./fonts/montserrat");
+}
+
+html {
+  background-color: rgb(7, 16, 44);
+  color:white;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: rgb(235, 144, 69); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: rgb(235, 144, 69); /* Gecko Browsers */
+}
+
+h1, h3 {
+  font-family: montserrat;
+}
+.cyan_200 {
+  color:rgb(191, 248, 255);
+}
+.cyan_300 {
+  color:rgb(111, 229, 245);
+}
+
+.blue {
+  background-color: rgb(165, 196, 231);
+}
+  
+.pink {
+  background-color: rgb(255, 179, 214);
+}
+
+.green {
+  background-color: rgb(209, 240, 151);
+}
+
+
+.sliced-btn-dev, .sliced-btn-uxd {
+  position: absolute;
+  padding: .6em 1em;
+  min-width: 9em;
+  z-index: 10;
+  clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+  border-radius: 20px 0px 0px 20px;
+  color:rgb(3, 52, 117);
+  background-color: rgb(0, 212, 240);
+  transition: ease-in-out 0.2s;
+}
+
+.sliced-btn-dev:hover, .sliced-btn-uxd:hover {
+  background-color: rgb(20, 8, 71);
+  color: rgb(182, 250, 255);
+  transform: scale(1.05);
+  z-index: 15;
+}
+
+.sliced-btn-dev:active, .sliced-btn-uxd:active {
+  background-color: rgb(0, 108, 158);
+  transition: ease-in 0s;
+  z-index: 15;
+}
+
+.sliced-btn-uxd:active {
+  background-color: rgb(184, 110, 0) !important;
+}
+
+.shadow-btn-dev, .shadow-btn-uxd {
+  padding: 1em;
+  width: 8em;
+  z-index: 0;
+  margin: 5px 40px 0 0;
+  border-radius: 20px;
+  box-shadow: 
+  0px 0px 10px 6px rgba(79, 255, 255, 0.342),
+  30px 0px 10px 6px rgba(150, 255, 181, 0.096);
+  background-color: rgba(255, 255, 255, 0);
+  transition: ease-in-out 0.3s;
+}
+
+.sliced-btn-uxd {
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+  border-radius: 0px 20px 20px 0px;
+  margin-left:-2.7em;
+  color: rgb(138, 57, 20);
+  background-color: rgb(255, 182, 73);
+}
+
+.sliced-btn-uxd:hover {
+  background-color: rgb(66, 9, 16);
+  color: rgb(255, 223, 134);
+}
+
+.shadow-btn-uxd {
+  margin: 5px 0 0 -30px;
+  box-shadow: 
+  0px 0px 20px 6px rgba(255, 177, 75, 0.301),
+  -10px 0px 10px 6px rgba(252, 255, 91, 0.151);
+}
+
+.tool-pill {
+  cursor: default;
+  padding: 0px 16px;
+  height: 25px;
+  background-color: rgb(155, 186, 245);
+  border-radius: 10px;
+  font-size: 85%;
+}
+
+#vertical_nav {
+  text-align: right;
+  position: fixed;
+  z-index: 50;
+  right: 40px;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+li {
+  margin: 10px;
+  white-space:nowrap;
+}
+
+.nav-dot {
+  background-color: rgba(160, 238, 248, 0.288);
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  transition: ease-in-out 0.1s; 
+}
+
+.nav-dot:hover {
+  background-color: rgb(111, 229, 245);
+  border-radius: 10%;
+  transform: rotate(45deg) scale(1.8);
+}
+
+.nav-label {
+  font-size: 60%;
+  font-weight: 500;
+  color: white;
+  visibility: hidden;
+  float:right;
+  position: relative;
+  right: 10px;
+  top:-7px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(150%) rotate(-45deg) !important;
+}
+
+.is-selected {
+  background-color: rgba(111, 229, 245, 0.5);
+  border-radius: 10%;
+  transform: rotate(45deg) scale(1.3);
+}
