@@ -18,22 +18,22 @@
 				</a>
 			</li>
 			<li>
-				<a href="#p1" class="nav-dot" onmouseover="on_hover(1)" onmouseout="off_hover(1)" onclick="selected(1)">
+				<a href="#Ekkn" class="nav-dot" onmouseover="on_hover(1)" onmouseout="off_hover(1)" onclick="selected(1)">
 					<span class="nav-label" style="right: 13px">Ekkn</span>
 				</a>
 			</li>
 			<li>
-				<a href="#p2" class="nav-dot" onmouseover="on_hover(2)" onmouseout="off_hover(2)" onclick="selected(2)">
+				<a href="#HVAD" class="nav-dot" onmouseover="on_hover(2)" onmouseout="off_hover(2)" onclick="selected(2)">
 					<span class="nav-label">HVAD</span>
 				</a>
 			</li>
 			<li>
-				<a href="#p3" class="nav-dot" onmouseover="on_hover(3)" onmouseout="off_hover(3)" onclick="selected(3)">
+				<a href="#COAD" class="nav-dot" onmouseover="on_hover(3)" onmouseout="off_hover(3)" onclick="selected(3)">
 					<span class="nav-label">COAD</span>
 				</a>
 			</li>
 			<li>
-				<a href="#p4" class="nav-dot" onmouseover="on_hover(4)" onmouseout="off_hover(4)" onclick="selected(4)">
+				<a href="#CWM" class="nav-dot" onmouseover="on_hover(4)" onmouseout="off_hover(4)" onclick="selected(4)">
 					<span class="nav-label">CWM</span>
 				</a>
 			</li>
@@ -64,64 +64,76 @@
   </div>
 
   <!-- Project 1: Ekkn Point of Sales -->
-  <div id="p1" class="flex w-full h-full mt-10">
-    <div class="flex-initial w-1/2 blue p-5">
-      Image placeholder
-    </div>
-    <div class="flex-initial w-1/2 p-5">
-      <h3 class="text-4xl">Ekkn Point of Sales</h3>
-      <h4 class="text-xl">Point of Sales System</h4>
-      <p class="mt-3">Business: Mrs. Convenience (Niagara Falls, ON)</p>
-      <p>Roles: Full stack developer and UI & UX designer</p>
-      <p class="my-5">My software description goes here.</p>
+  <div id="Ekkn" class="flex w-full h-full mt-5 p-10 pt-20">
+    <div class="relative flex-initial w-1/2 p-5 pt-7">
+      <div class="slides">
+        <img src="/img/ekkn1.png" style="width:100%" alt="Project 1 screen preview #1">
+      </div>
+      <div class="slides slides-fade">
+        <img src="/img/ekkn2.png" style="width:100%" alt="Project 1 screen preview #2">
+      </div>
+      <div class="block" style="text-align:center">
+        <span class="slide-dot" onclick="goToSlide(0)"></span> 
+        <span class="slide-dot" onclick="goToSlide(1)"></span> 
+      </div>
+    </div>    
+    <div class="flex-initial w-1/2 p-5 mr-10">
+      <h3 class="text-4xl">Ekkn Point of Sale</h3>
+      <h4 class="text-xl project-label">Point of Sale System / Jan 2022 - Present</h4>
+      <p class="mt-3"><strong>Client: </strong>Mrs. Convenience (Niagara Falls, ON)</p>
+      <p><strong>Roles: </strong>Full stack developer, UI & UX designer</p>
+      <p class="my-10">An intelligent, powerful, and user friendly point of sale system that fully caters to the Mrs.Convenience business. 
+        The system goes beyond processing transactions and tracking sales by filling in the gaps of modern day POS systems that are designed for convenience store businesses.
+        Ekkn Point of Sale provides business managers with product group manageability, discount manageability, and insightful sales, inventory, and trend reports to help manage their business.</p>
       <div class="flex">
-        <p class="flex-initial">Tools: </p>
-        <button class="tool-pill flex-initial ml-3">Java</button>
+        <p class="flex-initial mr-1"><strong>Tools: </strong></p>
+        <button class="tool-pill flex-initial ml-1">Java</button>
         <button class="tool-pill flex-initial ml-1">HTML</button>
         <button class="tool-pill flex-initial ml-1">CSS</button> 
-        <button class="tool-pill flex-initial ml-1">JavaScript</button> 
+        <button class="tool-pill flex-initial ml-1">JS</button> 
         <button class="tool-pill flex-initial ml-1">SQL</button>
       </div>
-      <p class="flex-initial ml-12 mt-1 text-xs"> *This project is a work in progress. More tools may be added in the future.</p>
+      <p class="flex-initial mt-1 text-xs"> *This project is a work in progress. More tools may be added in the future.</p>
     </div>
   </div>
 
   <!-- Project 2: Highway Video Analysis Dashboard -->
-  <div id="p2" class="flex w-full h-full mt-10">
-    <div class="flex-initial w-1/2 blue p-5">
+  <div id="HVAD" class="flex w-full h-full mt-5 p-10 pt-20">
+    <div class="flex-initial w-1/2 blue p-5 mr-5">
       Image placeholder
     </div>
-    <div class="flex-initial w-1/2 p-5">
-      <h3 class="text-4xl">Highway Video Analysis Dashboard</h3>
-      <h4 class="text-xl">Console application</h4>
-      <p class="mt-3">Employer: Digital Garage, MTO (St. Catharines, ON)</p>
-      <p>Role: Junior UX designer</p>
-      <p class="my-5">My software description goes here.</p>
+    <div class="flex-initial w-1/2 p-5 mr-10">
+      <h3 class="text-4xl">Highway Video Analysis Dashboard (HVAD)</h3>
+      <h4 class="text-xl project-label">Console application / July 2021 - Aug 2021</h4>
+      <p class="mt-3"><strong>Employer: </strong>Ontario Ministry of Transportation (St. Catharines, ON)</p>
+      <p><strong>Roles: </strong>UX designer, Front-end developer</p>
+      <p class="my-10">Hm</p>
       <div class="flex">
-        <p class="flex-initial">Tools: </p>
-        <button class="tool-pill flex-initial ml-3">Figma</button>
+        <p class="flex-initial mr-1"><strong>Tools: </strong></p>
+        <button class="tool-pill flex-initial ml-1">Figma</button>
         <button class="tool-pill flex-initial ml-1">HTML</button>
         <button class="tool-pill flex-initial ml-1">CSS</button> 
-        <button class="tool-pill flex-initial ml-1">JavaScript</button> 
+        <button class="tool-pill flex-initial ml-1">JS</button> 
         <button class="tool-pill flex-initial ml-1">Svelte</button>
       </div>
     </div>
   </div>
 
   <!-- Project 3: Course of Action Dashboard -->
-  <div id="p3" class="flex w-full h-full mt-10">
-    <div class="flex-initial w-1/2 blue p-5">
+
+  <div id="COAD" class="flex w-full h-full mt-5 p-10 pt-20">
+    <div class="flex-initial w-1/2 blue p-5 mr-5">
       Image placeholder
     </div>
-    <div class="flex-initial w-1/2 p-5">
-      <h3 class="text-4xl">Course of Action Dashboard</h3>
-      <h4 class="text-xl">Web application</h4>
-      <p class="mt-3">Institution: Brock University (St. Catharines, ON)</p>
-      <p>Roles: Front-end developer and UNIT tester</p>
-      <p class="my-5">My software description goes here.</p>
+    <div class="flex-initial w-1/2 p-5 mr-10">
+      <h3 class="text-4xl">Course of Action Dashboard (COAD)</h3>
+      <h4 class="text-xl project-label">Web application / Sept 2020 - Dec 2020</h4>
+      <p class="mt-3"><strong>Institution: </strong>Brock University (St. Catharines, ON)</p>
+      <p><strong>Roles: </strong>Front-end developer, Software engineer</p>
+      <p class="my-10">Hm</p>
       <div class="flex">
-        <p class="flex-initial">Tools: </p>
-        <button class="tool-pill flex-initial ml-3">JavaScript</button>
+        <p class="flex-initial mr-1"><strong>Tools: </strong></p>
+        <button class="tool-pill flex-initial ml-1">JavaScript</button>
         <button class="tool-pill flex-initial ml-1">Ajax</button>
         <button class="tool-pill flex-initial ml-1">HTML</button>
         <button class="tool-pill flex-initial ml-1">CSS</button> 
@@ -130,20 +142,20 @@
     </div>
   </div>
 
-  <!-- Project 4: CRM Website -->
-  <div id="p4" class="flex w-full h-full mt-10">
-    <div class="flex-initial w-1/2 blue p-5">
+  <!-- Project 4: CWM Website -->
+  <div id="CWM" class="flex w-full h-full mt-5 p-10 pt-20">
+    <div class="flex-initial w-1/2 blue p-5 mr-5">
       Image placeholder
     </div>
-    <div class="flex-initial w-1/2 p-5">
+    <div class="flex-initial w-1/2 p-5 mr-10">
       <h3 class="text-4xl">CWM Website</h3>
-      <h4 class="text-xl">Website</h4>
-      <p class="mt-3">Employer: Royal Bank of Canada (Toronto, ON)</p>
-      <p>Roles: Front-end developer and UI & UX designer</p>
-      <p class="my-5">My software description goes here.</p>
+      <h4 class="text-xl project-label">Website / Jan 2019 - Apr 2019</h4>
+      <p class="mt-3"><strong>Employer: </strong>Royal Bank of Canada (Toronto, ON)</p>
+      <p><strong>Roles: </strong>Front-end developer, UI & UX designer</p>
+      <p class="my-10">Hm</p>
       <div class="flex">
-        <p class="flex-initial">Tools: </p>
-        <button class="tool-pill flex-initial ml-3">HTML</button>
+        <p class="flex-initial mr-1"><strong>Tools: </strong></p>
+        <button class="tool-pill flex-initial ml-1">HTML</button>
         <button class="tool-pill flex-initial ml-1">CSS</button>
         <button class="tool-pill flex-initial ml-1">JavaScript</button>
       </div>
