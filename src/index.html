@@ -5,207 +5,259 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-
 </head>
 <body>
-
   <!-- Navbar -->
   <nav id="vertical_nav">
 		<ul>
 			<li>
-				<a href="#" class="nav-dot" onmouseover="on_hover(0)" onmouseout="off_hover(0)" onclick="selected(0)">
+				<a href="#top" class="nav-dot" onmouseover="on_hover(0)" onmouseout="off_hover(0)" onclick="selected(0)">
 					<span class="nav-label" style="right: 13px">Main</span>
 				</a>
 			</li>
+      <li>
+				<a href="#me" class="nav-dot" onmouseover="on_hover(1)" onmouseout="off_hover(1)" onclick="selected(1)">
+					<span class="nav-label" style="right: 13px; top: -10px">Me</span>
+				</a>
+			</li>
 			<li>
-				<a href="#Ekkn" class="nav-dot" onmouseover="on_hover(1)" onmouseout="off_hover(1)" onclick="selected(1)">
+				<a href="#Ekkn" class="nav-dot" onmouseover="on_hover(2)" onmouseout="off_hover(2)" onclick="selected(2)">
 					<span class="nav-label" style="right: 13px">Ekkn</span>
 				</a>
 			</li>
 			<li>
-				<a href="#HVAD" class="nav-dot" onmouseover="on_hover(2)" onmouseout="off_hover(2)" onclick="selected(2)">
+				<a href="#HVAD" class="nav-dot" onmouseover="on_hover(3)" onmouseout="off_hover(3)" onclick="selected(3)">
 					<span class="nav-label">HVAD</span>
 				</a>
 			</li>
 			<li>
-				<a href="#COAD" class="nav-dot" onmouseover="on_hover(3)" onmouseout="off_hover(3)" onclick="selected(3)">
+				<a href="#COAD" class="nav-dot" onmouseover="on_hover(4)" onmouseout="off_hover(4)" onclick="selected(4)">
 					<span class="nav-label">COAD</span>
 				</a>
 			</li>
-			<li>
-				<a href="#CWM" class="nav-dot" onmouseover="on_hover(4)" onmouseout="off_hover(4)" onclick="selected(4)">
+			<!-- <li>
+				<a href="#CWM" class="nav-dot" onmouseover="on_hover(5)" onmouseout="off_hover(5)" onclick="selected(5)">
 					<span class="nav-label">CWM</span>
 				</a>
-			</li>
-			<li>
-				<a href="#me" class="nav-dot" onmouseover="on_hover(5)" onmouseout="off_hover(5)" onclick="selected(5)">
-					<span class="nav-label" style="top: 1px">About Me</span>
-				</a>
-			</li>
+			</li> -->
 		</ul>
 	</nav>
+  
+  <div class="parallax">
+    <div id="top"></div>
+    <!-- Main: Background -->
+    <div id="floater-container" class="absolute parallax__group bg-fixed bg-cover drop-shadow-xl" style="background-image: url('../img/placeholder_bkg.jpg'); height: 95vh">
+      <div class="absolute w-screen h-screen">
+        <img class="floater first" data-depth="0.4" src="https://justcoded.com/wp-content/themes/justcoded/public/images/hexagon-xs.png" alt="Floater"/>
+        <img class="floater second" data-depth="0.2" src="https://justcoded.com/wp-content/themes/justcoded/public/images/hexagon-xs.png" alt="Floater"/>
+        <img class="floater third" data-depth="0.7" src="https://justcoded.com/wp-content/themes/justcoded/public/images/hexagon-xs.png" alt="Floater"/>
+      </div>
+      <!-- Title -->
+      <div class="container mx-auto px-4 h-full max-h-full parallax__layer parallax__layer--base p-20">
+        <div class="grid p-20 basis-11/12 h-full max-h-full overflow-hidden">
+          <h1 id="title" class="self-end block text-9xl cyan_300">Katie Lee</h1>
+          <h2 id="writer" class="self-start block text-3xl mt-5 ml-2 cyan_200"></h2>
+        </div>
+      </div>
+    </div>
 
-  <!-- Main: Background -->
-  <div class="bg-fixed bg-cover drop-shadow-xl" style="background-image: url('../img/placeholder_bkg.jpg'); height: 33em">
+    <!-- About me: Education, Skills, Work Experience, Contact -->
+    <div id="me" class="container h-screen mx-auto parallax__group mt-20">
+      <div class="flex parallax__layer parallax__layer--base"></div>
+      <div class="w-3/4 mx-auto h-full my-10">
+        <div class="divider"></div>
+        <p id="about-me" class="mx-auto text-xl leading-8 text-center">Hello, my name is Katie, and I'm a Brock University Computer Science Graduand with a background in art and design. 
+          My dual passion for development and design has led me to play both UX designer and software developer roles for nearly all my projects.
+          My interests lie in software development, machine learning, UX design, human-centred design, and concept design.
+          I'm driven to make a positive impact through my products while accomplishing a creative, valuable, and engaging experience for my users.
+        </p>
+        <div class="divider"></div>
+      </div>
+    </div>
+
+    <!-- Project 1: Ekkn Point of Sales -->
+    <div id="Ekkn" class="container mx-auto px-20 parallax__group flex-nowrap p-10 mt-10" style="height: auto">
+      <div class="flex parallax__layer parallax__layer--base">
+        <div class="project-bg"></div>
+        <div class="w-1/2 p-5 pt-12 pl-10">
+          <div class="slides img-wrap">
+            <img src="/img/ekkn1.png" style="width:100%" alt="Project 1 screen 1">
+          </div>
+          <div class="slides slides-fade img-wrap">
+            <img src="/img/ekkn2.png" style="width:100%" alt="Project 1 screen 2">
+          </div>
+          <div class="block" style="text-align:center">
+            <span class="slide-dot" onclick="goToSlide(0, 0)"></span> 
+            <span class="slide-dot" onclick="goToSlide(1, 0)"></span> 
+          </div>
+        </div>    
+        <div class="w-1/2 p-5 pt-10 pb-10 mr-10">
+          <h3 class="text-4xl">Ekkn Point of Sale</h3>
+          <h4 class="text-xl">Point of Sale System / Jan 2022 - Present</h4>
+          <p class="mt-3"><strong>Client: </strong>Mrs. Convenience (Niagara Falls, ON)</p>
+          <p><strong>Roles: </strong>Full stack developer, UI & UX designer</p>
+          <p class="my-8">An intelligent, powerful, and user friendly point of sale system that fully caters to the Mrs. Convenience business. 
+            The system goes beyond processing transactions and tracking sales by filling in the gaps of modern day POS systems that are designed for convenience store businesses.
+            Ekkn Point of Sale provides business owners with product group manageability, discount manageability, and insightful sales reports, inventory reports, and trend reports to help owners manage their business.</p>
+          <div class="flex">
+            <p class="flex-initial mr-1"><strong>Tools: </strong></p>
+            <button class="tool-pill blue flex-initial ml-1">Figma</button>
+            <button class="tool-pill blue flex-initial ml-1">Java</button>
+            <button class="tool-pill blue flex-initial ml-1">HTML</button>
+            <button class="tool-pill blue flex-initial ml-1">CSS</button> 
+            <button class="tool-pill blue flex-initial ml-1">JS</button> 
+            <button class="tool-pill blue flex-initial ml-1">SQL</button>
+          </div>
+          <div class="flex mt-3">
+            <p class="flex-initial mr-1"><strong>User research: </strong></p>
+            <button class="tool-pill orange flex-initial ml-1">User interviewing</button>
+            <button class="tool-pill orange flex-initial ml-1">User stories</button>
+          </div>
+          <p class="flex-initial mt-1 text-xs"> * This project is a work in progress. More tools may be added in the future.</p>
+        </div>
+      </div>
+      <div class="parallax__layer parallax__layer--fore" style="position:absolute !important">
+        <img class="first" data-depth="0.4" src="https://justcoded.com/wp-content/themes/justcoded/public/images/hexagon-xs.png" alt="Floater"/>
+      </div>
+    </div>
     
-    <!-- <DEV / UXD> Buttons -->
-    <div class="flex-nowrap mx-auto text-center pt-10 mb-6 h-20">
-      <button class="sliced-btn-dev">DEV</button>
-      <button class="flex-initial shadow-btn-dev"> </button>
-      <button class="sliced-btn-uxd">UXD</button>
-      <button class="flex-initial shadow-btn-uxd"> </button>
+    <!-- Project 2: Highway Video Analysis Dashboard -->
+    <div id="HVAD" class="container mx-auto px-20 parallax__group flex-nowrap p-10" style="height: auto">
+      <div class="flex parallax__layer parallax__layer--base">
+        <div class="project-bg"></div>
+        <div class="w-1/2 p-5 pt-12 pl-10">
+          <div class="slides img-wrap">
+            <img src="/img/hvad1.png" style="width:100%" alt="Project 2 screen 1">
+          </div>
+          <div class="slides slides-fade img-wrap">
+            <img src="/img/hvad3.png" style="width:100%" alt="Project 2 screen 2">
+          </div>
+          <div class="slides slides-fade img-wrap">
+            <img src="/img/hvad4.png" style="width:100%" alt="Project 3 screen 2">
+          </div>
+          <div class="block" style="text-align:center">
+            <span class="slide-dot" onclick="goToSlide(0, 1)"></span> 
+            <span class="slide-dot" onclick="goToSlide(1, 1)"></span> 
+            <span class="slide-dot" onclick="goToSlide(2, 1)"></span> 
+          </div>
+        </div>    
+        <div class="w-1/2 p-5 pt-10 pb-10 mr-10">
+          <h3 class="text-4xl">Highway Video Analysis Dashboard (HVAD)</h3>
+          <h4 class="text-xl">Console application / July 2021 - Aug 2021</h4>
+          <p class="mt-3"><strong>Employer: </strong>Ontario Ministry of Transportation (St. Catharines, ON)</p>
+          <p><strong>Roles: </strong>UI & UX designer, Front-end developer</p>
+          <p class="my-8">An interface designed for developers to help analyze and test AI vehicular tracking systems integrated with Ontario highway video cameras.
+            HVAD allows its users to continuously test and improve their AI models under various conditions that may impact video feed and model performance (i.e., weather conditions, obstructions, etc.).
+            Users can test their models by feeding them clips of live video feed and their results get sent back to the dashboard.
+            This allows the user to then perform accuracy testing and analysis on the model's performance under its experimented conditions.</p>
+          <div class="flex">
+            <p class="flex-initial mr-1"><strong>Tools: </strong></p>
+            <button class="tool-pill blue flex-initial ml-1">Figma</button>
+            <button class="tool-pill blue flex-initial ml-1">HTML</button>
+            <button class="tool-pill blue flex-initial ml-1">CSS</button>
+            <button class="tool-pill blue flex-initial ml-1">JS</button>
+            <button class="tool-pill blue flex-initial ml-1">Svelte</button>
+          </div>
+          <div class="flex mt-3">
+            <p class="flex-initial mr-1"><strong>User research: </strong></p>
+            <button class="tool-pill orange flex-initial ml-1">Guerilla testing</button>
+            <button class="tool-pill orange flex-initial ml-1">User interviewing</button>
+          </div>
+        </div>
+      </div>
+      <div class="parallax__layer parallax__layer--fore" style="position:absolute !important">
+        <img class="first" data-depth="0.4" src="https://justcoded.com/wp-content/themes/justcoded/public/images/hexagon-xs.png" alt="Floater"/>
+      </div>
     </div>
-    
-    <!-- Main: Katie Lee Introduction -->
-    <div class="p-20 basis-11/12">
-      <h1 class="text-9xl cyan_300">Katie Lee</h1>
-      <h2 id="writer" class="text-3xl mt-5 ml-2 cyan_200"></h2>
+
+    <!-- Project 3: Course of Action Dashboard -->
+    <div id="COAD" class="container mx-auto px-20 parallax__group flex-nowrap p-10" style="height: auto">
+      <div class="flex parallax__layer parallax__layer--base">
+        <div class="project-bg"></div>
+        <div class="w-1/2 p-5 pt-12 pl-10">
+          <div class="slides img-wrap">
+            <img src="/img/coad1.png" style="width:100%" alt="Project 3 screen 1">
+          </div>
+          <div class="slides slides-fade img-wrap">
+            <img src="/img/coad2.png" style="width:100%" alt="Project 3 screen 2">
+          </div>
+          <div class="block" style="text-align:center">
+            <span class="slide-dot" onclick="goToSlide(0, 2)"></span> 
+            <span class="slide-dot" onclick="goToSlide(1, 2)"></span> 
+          </div>
+        </div>    
+        <div class="w-1/2 p-5 pt-10 pb-10 mr-10">
+          <h3 class="text-4xl">Course of Action Dashboard (COAD)</h3>
+          <h4 class="text-xl">Web application / Sept 2020 - Dec 2020</h4>
+          <p class="mt-3"><strong>Institution: </strong>Brock University (St. Catharines, ON)</p>
+          <p><strong>Role: </strong>Full stack developer</p>
+          <p class="my-8">A user friendly dashboard dedicated to Brock undergradute students that provides them with an interactive course scheduler and organizer.
+            COAD allows students to easily plan out their courses for any semester and helps guide them in successfully planning out their academic careers by providing course reccommendations and potential conflicts.
+            Students can also see their program details and requirements, an overview of courses that they've taken, a course credit tracker, and a listing of all available courses that are offered at the university.
+          </p>
+          <div class="flex">
+            <p class="flex-initial mr-1"><strong>Tools: </strong></p>
+            <button class="tool-pill blue flex-initial ml-1">JavaScript</button>
+            <button class="tool-pill blue flex-initial ml-1">JQuery</button>
+            <button class="tool-pill blue flex-initial ml-1">HTML</button>
+            <button class="tool-pill blue flex-initial ml-1">CSS</button> 
+            <button class="tool-pill blue flex-initial ml-1">Bootstrap</button>
+          </div>
+        </div>
+      </div>
+      <div class="parallax__layer parallax__layer--fore" style="position:absolute !important">
+        <img class="first" data-depth="0.4" src="https://justcoded.com/wp-content/themes/justcoded/public/images/hexagon-xs.png" alt="Floater"/>
+      </div>
     </div>
+
+    <!-- Project 4: CWM Website -->
+    <!-- <div id="CWM" class="parallax__group flex-nowrap p-10">
+      <div class="project-bg parallax__layer parallax__layer--fore" style="position:absolute !important">
+        <img class="first" data-depth="0.4" src="https://justcoded.com/wp-content/themes/justcoded/public/images/hexagon-xs.png" alt="Floater"/>
+      </div>
+      <div class="flex parallax__layer parallax__layer--base">
+        <div class="w-1/2 p-5 pt-7">
+
+        </div>     
+        <div class="w-1/2 p-5 mr-10">
+          <h3 class="text-4xl">CWM Website</h3>
+          <h4 class="text-xl">Website / Jan 2019 - Apr 2019</h4>
+          <p class="mt-3"><strong>Employer: </strong>Royal Bank of Canada (Toronto, ON)</p>
+          <p><strong>Roles: </strong>Front-end developer, UI & UX designer</p>
+          <p class="my-10">A team website and resource platform designed to remedy the pain points of both the team members and their stakeholders.
+            The user research conducted had presented the challenges of the team and their stakeholders. 
+            The team had expressed feeling overwhelmed with e-mails between them and their stakeholders, involving the sharing of resources.
+            The stakeholders expressed feeling frustration due to having to continuously rely on the team for sharing resources and waiting for e-mail responses.
+            As a solution, the CWM website acts as a centralized location of resourses that becomes the first access point for both user types.
+            This resulted in a reduction of e-mail congestion and time and effort waste lost through back-and-forth communication, and stakeholder satisfaction and independence.
+          </p>
+          <div class="flex">
+            <p class="flex-initial mr-1"><strong>Tools: </strong></p>
+            <button class="tool-pill flex-initial ml-1">HTML</button>
+            <button class="tool-pill flex-initial ml-1">CSS</button>
+            <button class="tool-pill flex-initial ml-1">JavaScript</button>
+          </div>
+          <div class="flex mt-3">
+            <p class="flex-initial mr-1"><strong>User research: </strong></p>
+            <button class="tool-pill flex-initial ml-1">Data analysis</button>
+            <button class="tool-pill flex-initial ml-1">User interviewing</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Footer & Contact Info -->
+    <footer id="contact" class="self-center text-center mt-20">
+      <div class="mt-20 w-2/3 container grid flex-nowrap grid-cols-3 gap-3 mx-auto">
+        <div class="flex col-span-1 justify-self-center"><img src="/img/email-icon.png"/><a href="mailto:g.hyunlee12@gmail.com" target="_blank">g.hyunlee12@gmail.com</a></div>
+        <div class="flex col-span-1 justify-self-center"><img src="/img/linkedin-icon.png"/><a href="https://www.linkedin.com/in/katie-lee-08849417b/" target="_blank">linkedin.com/in/katie-lee</a></div>
+        <div class="flex col-span-1 justify-self-center"><img src="/img/github-icon.png"/><a href="https://github.com/kl17kl/" target="_blank">github.com/kl17kl</a></div>
+      </div>
+      <br/>
+      <br/>
+    </footer>
+  
   </div>
-
-  <!-- Project 1: Ekkn Point of Sales -->
-  <div id="Ekkn" class="flex w-full h-full mt-5 p-10 pt-20">
-    <div class="relative flex-initial w-1/2 p-5 pt-7">
-      <div class="slides">
-        <img src="/img/ekkn1.png" style="width:100%" alt="Project 1 screen preview #1">
-      </div>
-      <div class="slides slides-fade">
-        <img src="/img/ekkn2.png" style="width:100%" alt="Project 1 screen preview #2">
-      </div>
-      <div class="block" style="text-align:center">
-        <span class="slide-dot" onclick="goToSlide(0)"></span> 
-        <span class="slide-dot" onclick="goToSlide(1)"></span> 
-      </div>
-    </div>    
-    <div class="flex-initial w-1/2 p-5 mr-10">
-      <h3 class="text-4xl">Ekkn Point of Sale</h3>
-      <h4 class="text-xl project-label">Point of Sale System / Jan 2022 - Present</h4>
-      <p class="mt-3"><strong>Client: </strong>Mrs. Convenience (Niagara Falls, ON)</p>
-      <p><strong>Roles: </strong>Full stack developer, UI & UX designer</p>
-      <p class="my-10">An intelligent, powerful, and user friendly point of sale system that fully caters to the Mrs.Convenience business. 
-        The system goes beyond processing transactions and tracking sales by filling in the gaps of modern day POS systems that are designed for convenience store businesses.
-        Ekkn Point of Sale provides business managers with product group manageability, discount manageability, and insightful sales, inventory, and trend reports to help manage their business.</p>
-      <div class="flex">
-        <p class="flex-initial mr-1"><strong>Tools: </strong></p>
-        <button class="tool-pill flex-initial ml-1">Java</button>
-        <button class="tool-pill flex-initial ml-1">HTML</button>
-        <button class="tool-pill flex-initial ml-1">CSS</button> 
-        <button class="tool-pill flex-initial ml-1">JS</button> 
-        <button class="tool-pill flex-initial ml-1">SQL</button>
-      </div>
-      <p class="flex-initial mt-1 text-xs"> *This project is a work in progress. More tools may be added in the future.</p>
-    </div>
-  </div>
-
-  <!-- Project 2: Highway Video Analysis Dashboard -->
-  <div id="HVAD" class="flex w-full h-full mt-5 p-10 pt-20">
-    <div class="flex-initial w-1/2 blue p-5 mr-5">
-      Image placeholder
-    </div>
-    <div class="flex-initial w-1/2 p-5 mr-10">
-      <h3 class="text-4xl">Highway Video Analysis Dashboard (HVAD)</h3>
-      <h4 class="text-xl project-label">Console application / July 2021 - Aug 2021</h4>
-      <p class="mt-3"><strong>Employer: </strong>Ontario Ministry of Transportation (St. Catharines, ON)</p>
-      <p><strong>Roles: </strong>UX designer, Front-end developer</p>
-      <p class="my-10">Hm</p>
-      <div class="flex">
-        <p class="flex-initial mr-1"><strong>Tools: </strong></p>
-        <button class="tool-pill flex-initial ml-1">Figma</button>
-        <button class="tool-pill flex-initial ml-1">HTML</button>
-        <button class="tool-pill flex-initial ml-1">CSS</button> 
-        <button class="tool-pill flex-initial ml-1">JS</button> 
-        <button class="tool-pill flex-initial ml-1">Svelte</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 3: Course of Action Dashboard -->
-
-  <div id="COAD" class="flex w-full h-full mt-5 p-10 pt-20">
-    <div class="flex-initial w-1/2 blue p-5 mr-5">
-      Image placeholder
-    </div>
-    <div class="flex-initial w-1/2 p-5 mr-10">
-      <h3 class="text-4xl">Course of Action Dashboard (COAD)</h3>
-      <h4 class="text-xl project-label">Web application / Sept 2020 - Dec 2020</h4>
-      <p class="mt-3"><strong>Institution: </strong>Brock University (St. Catharines, ON)</p>
-      <p><strong>Roles: </strong>Front-end developer, Software engineer</p>
-      <p class="my-10">Hm</p>
-      <div class="flex">
-        <p class="flex-initial mr-1"><strong>Tools: </strong></p>
-        <button class="tool-pill flex-initial ml-1">JavaScript</button>
-        <button class="tool-pill flex-initial ml-1">Ajax</button>
-        <button class="tool-pill flex-initial ml-1">HTML</button>
-        <button class="tool-pill flex-initial ml-1">CSS</button> 
-        <button class="tool-pill flex-initial ml-1">Bootstrap</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 4: CWM Website -->
-  <div id="CWM" class="flex w-full h-full mt-5 p-10 pt-20">
-    <div class="flex-initial w-1/2 blue p-5 mr-5">
-      Image placeholder
-    </div>
-    <div class="flex-initial w-1/2 p-5 mr-10">
-      <h3 class="text-4xl">CWM Website</h3>
-      <h4 class="text-xl project-label">Website / Jan 2019 - Apr 2019</h4>
-      <p class="mt-3"><strong>Employer: </strong>Royal Bank of Canada (Toronto, ON)</p>
-      <p><strong>Roles: </strong>Front-end developer, UI & UX designer</p>
-      <p class="my-10">Hm</p>
-      <div class="flex">
-        <p class="flex-initial mr-1"><strong>Tools: </strong></p>
-        <button class="tool-pill flex-initial ml-1">HTML</button>
-        <button class="tool-pill flex-initial ml-1">CSS</button>
-        <button class="tool-pill flex-initial ml-1">JavaScript</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- About me: Education, Skills, Work Experience, Contact -->
-  <div id="me" class="pink w-full h-full my-10">
-    <p class="text-center text-xl my-10">About Me</p>
-    <p class="text-center">Brief introduction about me goes here.</p>
-
-    <div class="w-2/3 mx-auto my-10 grid grid-cols-6 gap-5 cyan">
-      <div class="col-span-1 blue">
-        <p>Education</p>
-      </div>
-      <div class="col-span-5 green">
-        <p>Brock University &nbsp Honours BSc Computer Science Co-op, Business Minor</p>
-        <p>St. Catharines, ON / Sept. 2017 - Dec. 2021</p>
-      </div>
-      <div class="col-span-1 blue">
-        <p>Achievements</p>
-      </div>
-      <div class="col-span-5 green">
-        <ul>
-          <li>Brock University Entrance Scholarship (90%+ academic average)</li>
-          <li>Dean’s List (80%+ yearly academic average for 4.5 years)</li>
-          <li>Golden Key International Honour Society (top 15% of faculty)</li>
-          <li>Lean Six Sigma - Yellow Belt Certification</li>
-        </ul>
-      </div>
-      <div class="col-span-1 blue">
-        <p>⌨ Skills</p>
-      </div>
-      <div class="col-span-5 green">
-        <p>Java, HTML, CSS, JavaScript, Python, AJAX, VBA, SQL, ASP.NET, testing, and prototyping.</p>
-      </div>
-      <div class="col-span-1 blue">
-        <p>✒ Skills</p>
-      </div>
-      <div class="col-span-5 green">
-        <p>Figma, Adobe Photoshop, Adobe Illustrator, Wireframing, Prototyping, User interviewing, Data synthesis, Collaboration, Empathy, and Visual design.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer & Contact Info -->
-  <footer id="contact_me" class="p-10 mx-auto text-center">
-    <p>g.hyunlee12@gmail.com</p>
-    <p>www.linkedin.com/in/katie-lee-08849417b</p>
-  </footer>
 
   <script type="text/javascript" src="scripts.js"></script>
   
