@@ -100,7 +100,6 @@ showSlides(0,2);
 
 
 // observer
-
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     // If the element is visible
@@ -109,7 +108,13 @@ const observer = new IntersectionObserver(entries => {
         entry.target.classList.add('divider-fade');
       }
       else if (entry.target.classList == "project-bg") {
-        entry.target.classList.add('project-bg-fade');
+        console.log(entry)
+        entry.target.classList.add('project-bg-right');
+      }
+      else if (entry.target.classList == "project-bg project-left") {
+        console.log(entry)
+
+        entry.target.classList.add('project-bg-left');
       }
       else { //slides
         entry.target.classList.add('slides-fade');
