@@ -742,14 +742,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @font-face {
-  font-family: montserrat;
+  font-family: montserrat, Helvetica Neue, Helvetica, Arial, sans-serif;
 
-  src: ("./fonts/montserrat");
+  src: ("/fonts/montserrat");
 }
 
 html {
   background-image: linear-gradient(rgb(7, 16, 44), rgb(12, 14, 47), rgb(28, 4, 51));
-  /* background-color: rgb(7, 16, 44); */
   color:rgb(195, 205, 216);
   scroll-behavior: smooth !important;
 }
@@ -816,18 +815,6 @@ footer img {
 
 .cyan {
   color:rgb(102, 237, 255);
-}
-
-.blue {
-  background-color: rgb(165, 196, 231);
-}
-
-.pink {
-  background-color: rgb(255, 179, 214);
-}
-
-.green {
-  background-color: rgb(209, 240, 151);
 }
 
 .sliced-btn-dev, .sliced-btn-uxd {
@@ -901,18 +888,6 @@ footer img {
   height: 25px;
   border-radius: 7px;
   font-size: 95%;
-}
-
-.blue {
-  color:rgb(7, 10, 36);
-  background-color: rgb(0, 212, 240);
-  box-shadow: 0px 1px 7px 0px rgba(0, 212, 240, 0.315);
-}
-
-.orange {
-  color:rgb(36, 7, 14);
-  background-color: rgb(233, 144, 43);
-  box-shadow: 0px 1px 7px 0px rgba(255, 198, 42, 0.322);
 }
 
 #vertical_nav {
