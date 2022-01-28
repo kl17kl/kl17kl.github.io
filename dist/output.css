@@ -514,10 +514,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-column: span 1 / span 1;
 }
 
-.float-left {
-  float: left;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;

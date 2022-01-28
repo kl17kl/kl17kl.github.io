@@ -19,7 +19,7 @@ function selected(e) {
 }
 
 //typewriter
-let lines = ['Software Developer', 'UI & UX Designer', 'Web Developer', 'Visual Designer'];
+let lines = ['Software Developer', 'UI & UX Designer', 'Web Developer', 'Visual & Graphic Designer'];
 var writer = document.getElementById('writer');
 var typewriter = new Typewriter(writer, {
   loop: true,
