@@ -1,8 +1,3 @@
-var script = document.createElement('script');
-script.src = 'https://code.jquery.com/jquery-3.4.1.min.js';
-script.type = 'text/javascript';
-document.getElementsByTagName('head')[0].appendChild(script);
-
 //navbar
  var navItems = document.getElementById("vertical_nav").querySelectorAll("li");
 
@@ -84,7 +79,6 @@ function showSlides(n, section) {
   for (i = 0; i < slides_arr[section].length; i++) {
     slides_arr[section][i].style.display = "none";
   }
-  console.log(slides_arr)
   slideIndex++;
   if (slideIndex > slides_arr[section].length) {slideIndex = 1}    
   // Set up active slide-dot
@@ -108,12 +102,9 @@ const observer = new IntersectionObserver(entries => {
         entry.target.classList.add('divider-fade');
       }
       else if (entry.target.classList == "project-bg") {
-        console.log(entry)
         entry.target.classList.add('project-bg-right');
       }
       else if (entry.target.classList == "project-bg project-left") {
-        console.log(entry)
-
         entry.target.classList.add('project-bg-left');
       }
       else { //slides

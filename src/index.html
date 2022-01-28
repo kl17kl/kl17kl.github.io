@@ -1,42 +1,43 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katie Lee</title>
   <link href="/dist/output.css" rel="stylesheet">
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 </head>
 <body>
   <!-- Navbar -->
-  <nav id="vertical_nav">
+  <nav id="vertical_nav" tabindex=0>
 		<ul>
 			<li>
-				<a href="#top" class="nav-dot" onmouseover="on_hover(0)" onmouseout="off_hover(0)" onclick="selected(0)">
+				<a href="#top" class="nav-dot" onmouseover="on_hover(0)" onmouseout="off_hover(0)" onclick="selected(0)" aria-label="navigation link: Main" tabindex=0>
 					<span class="nav-label" style="right: 13px">Main</span>
 				</a>
 			</li>
       <li>
-				<a href="#me" class="nav-dot" onmouseover="on_hover(1)" onmouseout="off_hover(1)" onclick="selected(1)">
+				<a href="#me" class="nav-dot" onmouseover="on_hover(1)" onmouseout="off_hover(1)" onclick="selected(1)" aria-label="navigation link: About me" tabindex=0>
 					<span class="nav-label" style="right: 13px; top: -10px">Me</span>
 				</a>
 			</li>
 			<li>
-				<a href="#Ekkn" class="nav-dot" onmouseover="on_hover(2)" onmouseout="off_hover(2)" onclick="selected(2)">
+				<a href="#Ekkn" class="nav-dot" onmouseover="on_hover(2)" onmouseout="off_hover(2)" onclick="selected(2)" aria-label="navigation link: Ekkn" tabindex=0>
 					<span class="nav-label" style="right: 13px">Ekkn</span>
 				</a>
 			</li>
 			<li>
-				<a href="#HVAD" class="nav-dot" onmouseover="on_hover(3)" onmouseout="off_hover(3)" onclick="selected(3)">
+				<a href="#HVAD" class="nav-dot" onmouseover="on_hover(3)" onmouseout="off_hover(3)" onclick="selected(3)" aria-label="navigation link: HVAD" tabindex=0>
 					<span class="nav-label">HVAD</span>
 				</a>
 			</li>
 			<li>
-				<a href="#COAD" class="nav-dot" onmouseover="on_hover(4)" onmouseout="off_hover(4)" onclick="selected(4)">
+				<a href="#COAD" class="nav-dot" onmouseover="on_hover(4)" onmouseout="off_hover(4)" onclick="selected(4)" aria-label="navigation link: COAD" tabindex=0>
 					<span class="nav-label">COAD</span>
 				</a>
 			</li>
 			<!-- <li>
-				<a href="#CWM" class="nav-dot" onmouseover="on_hover(5)" onmouseout="off_hover(5)" onclick="selected(5)">
+				<a href="#CWM" class="nav-dot" onmouseover="on_hover(5)" onmouseout="off_hover(5)" onclick="selected(5)"> 
 					<span class="nav-label">CWM</span>
 				</a>
 			</li> -->
@@ -49,25 +50,25 @@
     <div id="floater-container" class="absolute parallax__group bg-fixed bg-cover drop-shadow-xl" style="background-image: url('../img/background.png'); height: 95vh">
       <div class="absolute w-screen h-screen">
         <!-- the smaller the depth the closer it is-->
-        <img class="floater pixel-light" data-depth="0.05" src="/img/pixel-light.png"/>
-        <img class="floater laptop" data-depth="0.09" src="/img/laptop.png"/>
-        <img class="floater screens-deep" data-depth="0.2" src="/img/screens-deep.png"/>
-        <img class="floater screens-back" data-depth="0.3" src="/img/screens-back.png"/>
-        <img class="floater screens-base" data-depth="0.4" src="/img/screens-base.png"/>
-        <img class="floater screens-fore" data-depth="0.5" src="/img/screens-fore.png"/>
-        <img class="floater orange-blur-1" data-depth="0.6" src="/img/orange-blur.png"/>
-        <img class="floater orange-blur-2" data-depth="0.4" src="/img/orange-blur.png"/>
-        <img class="floater orange-blur-3" data-depth="0.2" src="/img/orange-blur.png"/>
-        <img class="floater yellow-blur-1" data-depth="0.1" src="/img/yellow-blur.png"/>
-        <img class="floater yellow-blur-2" data-depth="0.1" src="/img/yellow-blur.png"/>
-        <img class="floater yellow-blur-3" data-depth="0.1" src="/img/yellow-blur.png"/>
-        <img class="floater yellow-blur-4" data-depth="0.1" src="/img/yellow-blur.png"/>
+        <img class="floater pixel-light" data-depth="0.05" src="/img/pixel-light.png" alt="background lighting"/>
+        <img class="floater laptop" data-depth="0.09" src="/img/laptop.png" alt="floating laptop"/>
+        <img class="floater screens-deep" data-depth="0.2" src="/img/screens-deep.png" alt="floating screens"/>
+        <img class="floater screens-back" data-depth="0.3" src="/img/screens-back.png" alt="floating screens"/>
+        <img class="floater screens-base" data-depth="0.4" src="/img/screens-base.png" alt="floating screens"/>
+        <img class="floater screens-fore" data-depth="0.5" src="/img/screens-fore.png" alt="floating screens"/>
+        <img class="floater orange-blur-1" data-depth="0.6" src="/img/orange-blur.png" alt="floating blur"/>
+        <img class="floater orange-blur-2" data-depth="0.4" src="/img/orange-blur.png" alt="floating blur"/>
+        <img class="floater orange-blur-3" data-depth="0.2" src="/img/orange-blur.png" alt="floating blur"/>
+        <img class="floater yellow-blur-1" data-depth="0.1" src="/img/yellow-blur.png" alt="floating blur"/>
+        <img class="floater yellow-blur-2" data-depth="0.1" src="/img/yellow-blur.png" alt="floating blur"/>
+        <img class="floater yellow-blur-3" data-depth="0.1" src="/img/yellow-blur.png" alt="floating blur"/>
+        <img class="floater yellow-blur-4" data-depth="0.1" src="/img/yellow-blur.png" alt="floating blur"/>
       </div>
       <!-- Title -->
       <div class="container mx-auto px-4 h-full max-h-full parallax__layer parallax__layer--base p-20">
         <div class="grid p-20 basis-11/12 h-full max-h-full overflow-hidden">
-          <h1 id="title" class="self-end block text-9xl cyan">Katie Lee</h1>
-          <h2 id="writer" class="self-start block text-3xl mt-5 ml-2 cyan"></h2>
+          <h1 id="title" class="self-end block text-9xl cyan" tabindex=0>Katie Lee</h1>
+          <h2 id="writer" class="self-start block text-3xl mt-5 ml-2 cyan" tabindex=0></h2>
         </div>
       </div>
     </div>
@@ -77,7 +78,7 @@
       <div class="flex parallax__layer parallax__layer--base"></div>
       <div class="w-3/4 mx-auto h-full my-10">
         <div class="divider"></div>
-        <p id="about-me" class="mx-auto text-xl leading-8 text-center">Hello, my name is Katie, and I'm a Brock University Computer Science Graduand with a background in art and design. 
+        <p id="about-me" class="mx-auto text-xl leading-8 text-center" tabindex=0>Hello, my name is Katie, and I'm a Brock University Computer Science Graduand with a background in art and design. 
           My dual passion for development and design has led me to play both the UX designer and software developer roles for most of my work.
           My interests lie in software development, machine learning, UX design, human-centred design, and concept design.
           I'm driven to make a positive impact through my products while accomplishing a creative, valuable, and engaging experience for my users.
@@ -91,47 +92,47 @@
       <div class="flex parallax__layer parallax__layer--base">
         <div class="project-bg"></div>
         <div class="w-1/2 p-5 pt-12 pl-10">
-          <div class="slides img-wrap">
+          <div class="slides img-wrap" tabindex=0>
             <img src="/img/ekkn1.png" style="width:100%" alt="Project 1 screen 1">
           </div>
-          <div class="slides slides-fade img-wrap">
+          <div class="slides slides-fade img-wrap" tabindex=0>
             <img src="/img/ekkn2.png" style="width:100%" alt="Project 1 screen 2">
           </div>
           <div class="block" style="text-align:center">
-            <span class="slide-dot" onclick="goToSlide(0, 0)"></span> 
-            <span class="slide-dot" onclick="goToSlide(1, 0)"></span> 
+            <span class="slide-dot" onclick="goToSlide(0, 0)" tabindex=0 onkeypress="goToSlide(0, 0)"></span> 
+            <span class="slide-dot" onclick="goToSlide(1, 0)" tabindex=0 onkeypress="goToSlide(1, 0)"></span> 
           </div>
         </div>    
         <div class="w-1/2 p-5 pt-10 pb-10 mr-10">
-          <h3 class="text-4xl">Ekkn Point of Sale</h3>
-          <h4 class="text-xl">Point of Sale System / Jan 2022 - Present</h4>
-          <p class="mt-3"><strong>Client: </strong>Mrs. Convenience (Niagara Falls, ON)</p>
-          <p><strong>Roles: </strong>Full stack developer, UI & UX designer</p>
-          <p class="my-8">An intelligent, powerful, and user friendly point of sale system that fully caters to the Mrs. Convenience business. 
+          <h3 class="text-4xl" tabindex=0>Ekkn Point of Sale</h3>
+          <h4 class="text-xl" tabindex=0>Point of Sale System / Jan 2022 - Present</h4>
+          <p class="mt-3" tabindex=0><strong>Client: </strong>Mrs. Convenience (Niagara Falls, ON)</p>
+          <p tabindex=0><strong>Roles: </strong>Full stack developer, UI & UX designer</p>
+          <p class="my-8" tabindex=0>An intelligent, powerful, and user friendly point of sale system that fully caters to the Mrs. Convenience business. 
             The system goes beyond processing transactions and tracking sales by filling in the gaps of modern day POS systems that are designed for convenience store businesses.
             Ekkn Point of Sale provides business owners with product group manageability, discount manageability, and insightful sales reports, inventory reports, and trend reports to help owners manage their business.</p>
           <div class="flex">
-            <p class="flex-initial mr-1"><strong>Tools: </strong></p>
-            <button class="tool-pill blue flex-initial ml-1">Figma</button>
-            <button class="tool-pill blue flex-initial ml-1">Java</button>
-            <button class="tool-pill blue flex-initial ml-1">HTML</button>
-            <button class="tool-pill blue flex-initial ml-1">CSS</button> 
-            <button class="tool-pill blue flex-initial ml-1">JS</button> 
-            <button class="tool-pill blue flex-initial ml-1">SQL</button>
+            <p class="flex-initial mr-1" tabindex=0><strong>Tools: </strong></p>
+            <button class="tool-pill blue flex-initial ml-1" tabindex=0>Figma</button>
+            <button class="tool-pill blue flex-initial ml-1" tabindex=0>Java</button>
+            <button class="tool-pill blue flex-initial ml-1" tabindex=0>HTML</button>
+            <button class="tool-pill blue flex-initial ml-1" tabindex=0>CSS</button> 
+            <button class="tool-pill blue flex-initial ml-1" tabindex=0>JS</button> 
+            <button class="tool-pill blue flex-initial ml-1" tabindex=0>SQL</button>
           </div>
           <div class="flex mt-3">
-            <p class="flex-initial mr-1"><strong>User research: </strong></p>
-            <button class="tool-pill orange flex-initial ml-1">User interviewing</button>
-            <button class="tool-pill orange flex-initial ml-1">User stories</button>
+            <p class="flex-initial mr-1" tabindex=0><strong>User research: </strong></p>
+            <button class="tool-pill orange flex-initial ml-1" tabindex=0>User interviewing</button>
+            <button class="tool-pill orange flex-initial ml-1" tabindex=0>User stories</button>
           </div>
-          <p class="flex-initial mt-1 text-xs"> * This project is a work in progress. More tools may be added in the future.</p>
+          <p class="flex-initial mt-1 text-xs" tabindex=0> * This project is a work in progress. More tools may be added in the future.</p>
         </div>
       </div>
       <div class="parallax__layer parallax__layer--fore" style="position:absolute !important">
-        <img class="square-blue" src="/img/square-blue.png"/>
+        <img class="square-blue" src="/img/square-blue.png" alt="floating blue square"/>
       </div>
       <div class="parallax__layer parallax__layer--top" style="position:absolute !important">
-        <img class="square-orange" src="/img/square-orange.png"/>
+        <img class="square-orange" src="/img/square-orange.png" alt="floating orange square"/>
       </div>
     </div>
     
@@ -140,50 +141,50 @@
       <div class="flex parallax__layer parallax__layer--base">
         <div class="project-bg project-left"></div>
         <div class="w-1/2 p-5 pt-12 pl-10">
-          <div class="slides img-wrap">
+          <div class="slides img-wrap" tabindex=0>
             <img src="/img/hvad1.png" style="width:100%" alt="Project 2 screen 1">
           </div>
-          <div class="slides slides-fade img-wrap">
+          <div class="slides slides-fade img-wrap" tabindex=0>
             <img src="/img/hvad3.png" style="width:100%" alt="Project 2 screen 2">
           </div>
-          <div class="slides slides-fade img-wrap">
-            <img src="/img/hvad4.png" style="width:100%" alt="Project 3 screen 2">
+          <div class="slides slides-fade img-wrap" tabindex=0>
+            <img src="/img/hvad4.png" style="width:100%" alt="Project 3 screen 3">
           </div>
           <div class="block" style="text-align:center">
-            <span class="slide-dot" onclick="goToSlide(0, 1)"></span> 
-            <span class="slide-dot" onclick="goToSlide(1, 1)"></span> 
-            <span class="slide-dot" onclick="goToSlide(2, 1)"></span> 
+            <span class="slide-dot" onclick="goToSlide(0, 1)" onkeypress="goToSlide(0, 1)" tabindex=0></span> 
+            <span class="slide-dot" onclick="goToSlide(1, 1)" onkeypress="goToSlide(1, 1)" tabindex=0></span> 
+            <span class="slide-dot" onclick="goToSlide(2, 1)" onkeypress="goToSlide(2, 1)" tabindex=0></span> 
           </div>
         </div>    
         <div class="w-1/2 p-5 pt-10 pb-10 mr-10">
-          <h3 class="text-4xl">Highway Video Analysis Dashboard (HVAD)</h3>
-          <h4 class="text-xl">Console application / July 2021 - Aug 2021</h4>
-          <p class="mt-3"><strong>Employer: </strong>Ontario Ministry of Transportation (St. Catharines, ON)</p>
-          <p><strong>Roles: </strong>UI & UX designer, Front-end developer</p>
-          <p class="my-8">An interface designed for developers to help analyze and test AI vehicular tracking systems integrated with Ontario highway video cameras.
+          <h3 class="text-4xl" tabindex=0>Highway Video Analysis Dashboard (HVAD)</h3>
+          <h4 class="text-xl" tabindex=0>Console application / July 2021 - Aug 2021</h4>
+          <p class="mt-3" tabindex=0><strong>Employer: </strong>Ontario Ministry of Transportation (St. Catharines, ON)</p>
+          <p tabindex=0><strong>Roles: </strong>UI & UX designer, Front-end developer</p>
+          <p class="my-8" tabindex=0>An interface designed for developers to help analyze and test AI vehicular tracking systems integrated with Ontario highway video cameras.
             HVAD allows its users to continuously test and improve their AI models under various conditions that may impact video feed and model performance (i.e., weather conditions, obstructions, etc.).
             Users can test their models by feeding them clips of live video feed and their results get sent back to the dashboard.
             This allows the user to then perform accuracy testing and analysis on the model's performance under its experimented conditions.</p>
           <div class="flex">
-            <p class="flex-initial mr-1"><strong>Tools: </strong></p>
-            <button class="tool-pill blue flex-initial ml-1">Figma</button>
-            <button class="tool-pill blue flex-initial ml-1">HTML</button>
-            <button class="tool-pill blue flex-initial ml-1">CSS</button>
-            <button class="tool-pill blue flex-initial ml-1">JS</button>
-            <button class="tool-pill blue flex-initial ml-1">Svelte</button>
+            <p class="flex-initial mr-1" tabindex=0><strong>Tools: </strong></p>
+            <button class="tool-pill blue flex-initial ml-1" tabindex=0>Figma</button>
+            <button class="tool-pill blue flex-initial ml-1" tabindex=0>HTML</button>
+            <button class="tool-pill blue flex-initial ml-1" tabindex=0>CSS</button>
+            <button class="tool-pill blue flex-initial ml-1" tabindex=0>JS</button>
+            <button class="tool-pill blue flex-initial ml-1" tabindex=0>Svelte</button>
           </div>
           <div class="flex mt-3">
-            <p class="flex-initial mr-1"><strong>User research: </strong></p>
-            <button class="tool-pill orange flex-initial ml-1">Guerilla testing</button>
-            <button class="tool-pill orange flex-initial ml-1">User interviewing</button>
+            <p class="flex-initial mr-1" tabindex=0><strong>User research: </strong></p>
+            <button class="tool-pill orange flex-initial ml-1" tabindex=0>Guerilla testing</button>
+            <button class="tool-pill orange flex-initial ml-1" tabindex=0>User interviewing</button>
           </div>
         </div>
       </div>
       <div class="parallax__layer parallax__layer--fore" style="position:absolute !important">
-        <img class="square-blue" src="/img/square-blue.png"/>
+        <img class="square-blue" src="/img/square-blue.png" alt="floating blue square"/>
       </div>
       <div class="parallax__layer parallax__layer--top" style="position:absolute !important">
-        <img class="square-orange" src="/img/square-orange.png"/>
+        <img class="square-orange" src="/img/square-orange.png" alt="floating orange square"/>
       </div>
     </div>
 
@@ -192,41 +193,41 @@
       <div class="flex parallax__layer parallax__layer--base">
         <div class="project-bg"></div>
         <div class="w-1/2 p-5 pt-12 pl-10">
-          <div class="slides img-wrap">
+          <div class="slides img-wrap" tabindex=0>
             <img src="/img/coad1.png" style="width:100%" alt="Project 3 screen 1">
           </div>
-          <div class="slides slides-fade img-wrap">
+          <div class="slides slides-fade img-wrap" tabindex=0>
             <img src="/img/coad2.png" style="width:100%" alt="Project 3 screen 2">
           </div>
           <div class="block" style="text-align:center">
-            <span class="slide-dot" onclick="goToSlide(0, 2)"></span> 
-            <span class="slide-dot" onclick="goToSlide(1, 2)"></span> 
+            <span class="slide-dot" onclick="goToSlide(0, 2)" onkeypress="goToSlide(0, 2)" tabindex=0></span> 
+            <span class="slide-dot" onclick="goToSlide(1, 2)" onkeypress="goToSlide(1, 2)" tabindex=0></span> 
           </div>
         </div>    
         <div class="w-1/2 p-5 pt-10 pb-10 mr-10">
-          <h3 class="text-4xl">Course of Action Dashboard (COAD)</h3>
-          <h4 class="text-xl">Web application / Sept 2020 - Dec 2020</h4>
-          <p class="mt-3"><strong>Institution: </strong>Brock University (St. Catharines, ON)</p>
-          <p><strong>Role: </strong>Full stack developer</p>
-          <p class="my-8">A user friendly dashboard dedicated to Brock undergradute students that provides them with an interactive course scheduler and organizer.
+          <h3 class="text-4xl" tabindex=0>Course of Action Dashboard (COAD)</h3>
+          <h4 class="text-xl" tabindex=0>Web application / Sept 2020 - Dec 2020</h4>
+          <p class="mt-3" tabindex=0><strong>Institution: </strong>Brock University (St. Catharines, ON)</p>
+          <p tabindex=0><strong>Role: </strong>Full stack developer</p>
+          <p class="my-8" tabindex=0>A user friendly dashboard dedicated to Brock undergradute students that provides them with an interactive course scheduler and organizer.
             COAD allows students to easily plan out their courses for any semester and helps guide them in successfully planning out their academic careers by providing course reccommendations and potential conflicts.
             Students can also see their program details and requirements, an overview of courses that they've taken, a course credit tracker, and a listing of all available courses that are offered at the university.
           </p>
           <div class="flex">
-            <p class="flex-initial mr-1"><strong>Tools: </strong></p>
-            <button class="tool-pill blue flex-initial ml-1">JavaScript</button>
-            <button class="tool-pill blue flex-initial ml-1">JQuery</button>
-            <button class="tool-pill blue flex-initial ml-1">HTML</button>
-            <button class="tool-pill blue flex-initial ml-1">CSS</button> 
-            <button class="tool-pill blue flex-initial ml-1">Bootstrap</button>
+            <p class="flex-initial mr-1" tabindex=0><strong>Tools: </strong></p>
+            <button class="tool-pill blue flex-initial ml-1" tabindex=0>JavaScript</button>
+            <button class="tool-pill blue flex-initial ml-1" tabindex=0>JQuery</button>
+            <button class="tool-pill blue flex-initial ml-1" tabindex=0>HTML</button>
+            <button class="tool-pill blue flex-initial ml-1" tabindex=0>CSS</button> 
+            <button class="tool-pill blue flex-initial ml-1" tabindex=0>Bootstrap</button>
           </div>
         </div>
       </div>
       <div class="parallax__layer parallax__layer--fore" style="position:absolute !important">
-        <img class="square-blue" src="/img/square-blue.png"/>
+        <img class="square-blue" src="/img/square-blue.png" alt="floating blue square"/>
       </div>
       <div class="parallax__layer parallax__layer--top" style="position:absolute !important">
-        <img class="square-orange" src="/img/square-orange.png"/>
+        <img class="square-orange" src="/img/square-orange.png" alt="floating orange square"/>
       </div>
     </div>
 
@@ -269,9 +270,9 @@
     <!-- Footer & Contact Info -->
     <footer id="contact" class="self-center text-center mt-20">
       <div class="mt-20 w-2/3 container grid flex-nowrap grid-cols-3 gap-3 mx-auto">
-        <div class="flex col-span-1 justify-self-center"><img src="/img/email-icon.png"/><a href="mailto:g.hyunlee12@gmail.com" target="_blank">g.hyunlee12@gmail.com</a></div>
-        <div class="flex col-span-1 justify-self-center"><img src="/img/linkedin-icon.png"/><a href="https://www.linkedin.com/in/katie-lee-08849417b/" target="_blank">linkedin.com/in/katie-lee</a></div>
-        <div class="flex col-span-1 justify-self-center"><img src="/img/github-icon.png"/><a href="https://github.com/kl17kl/" target="_blank">github.com/kl17kl</a></div>
+        <div class="flex col-span-1 justify-self-center"><img src="/img/email-icon.png" alt="email icon"/><a href="mailto:g.hyunlee12@gmail.com" rel="noreferrer" target="_blank" tabindex=0>g.hyunlee12@gmail.com</a></div>
+        <div class="flex col-span-1 justify-self-center"><img src="/img/linkedin-icon.png" alt="linkedin icon"/><a href="https://www.linkedin.com/in/katie-lee-08849417b/" rel="noreferrer" target="_blank" tabindex=0>linkedin.com/in/katie-lee</a></div>
+        <div class="flex col-span-1 justify-self-center"><img src="/img/github-icon.png" alt="github icon"/><a href="https://github.com/kl17kl/" rel="noreferrer" target="_blank" tabindex=0>github.com/kl17kl</a></div>
       </div>
       <br/>
       <br/>

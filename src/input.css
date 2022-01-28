@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: montserrat, Helvetica Neue, Helvetica, Arial, sans-serif;
-  src: ("/fonts/montserrat");
+  font-family: 'Montserrat', sans-serif;
+  src: ('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 }
 
 html {
@@ -32,7 +32,7 @@ h4::-moz-selection {
 }
 
 h1, h3 {
-  font-family: montserrat;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1, h2, h3, h5 {
@@ -56,6 +56,18 @@ footer img {
 
 .cyan {
   color:rgb(102, 237, 255);
+}
+
+.blue {
+  color:rgb(7, 10, 36);
+  background-color: rgb(0, 212, 240);
+  box-shadow: 0px 1px 7px 0px rgba(0, 212, 240, 0.315);
+}
+
+.orange {
+  color:rgb(36, 7, 14);
+  background-color: rgb(233, 144, 43);
+  box-shadow: 0px 1px 7px 0px rgba(255, 198, 42, 0.322);
 }
 
 .sliced-btn-dev, .sliced-btn-uxd {
@@ -313,43 +325,43 @@ li {
 }
 .orange-blur-1{
   width: 6vw;
-  height: 6vw;
+  height: auto;
   top: 66%;
   left: 33%;
 }
 .orange-blur-2{
   width: 5.5vw;
-  height: 5.5vw;
+  height: auto;
   top: 13%;
   left: 4%;
 }
 .orange-blur-3{
   width: 4vw;
-  height: 4vw;
+  height: auto;
   top: 26%;
   left: 53%;
 }
 .yellow-blur-1{
   width: 3.1vw;
-  height: 3.1vw;
+  height: auto;
   top: 10%;
   left: 10%;
 }
 .yellow-blur-2{
   width: 3.6vw;
-  height: 3.6vw;
+  height: auto;
   top: 19%;
   left: 13%;
 }
 .yellow-blur-3{
   width: 2.5vw;
-  height: 2.5vw;
+  height: auto;
   top: 35%;
   left: 57%;
 }
 .yellow-blur-4{
   width: 3.1vw;
-  height: 3.1vw;
+  height: auto;
   top: 72%;
   left: 92%;
 }
